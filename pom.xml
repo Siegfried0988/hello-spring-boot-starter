@@ -11,7 +11,7 @@
 
 
 	<!--   可以更改成以下寫法，這樣產生的檔案比較單純-->
-	<groupId>kennyhome</groupId>
+	<groupId>io.github.siegfried0988</groupId>
 	<artifactId>hello-spring-boot-starter</artifactId>
 	<version>1.0</version>
 	<!--   <name>hello-spring-boot-starter</name>-->
@@ -123,23 +123,23 @@
 	</scm>
 
 
-<!--	<distributionManagement>-->
-<!--		<snapshotRepository>-->
-<!--			<id>ossrh</id>-->
-<!--			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>-->
-<!--		</snapshotRepository>-->
-<!--		<repository>-->
-<!--			<id>ossrh</id>-->
-<!--			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
-<!--		</repository>-->
-<!--	</distributionManagement>-->
 	<distributionManagement>
-		<!--  申明打包到Maven公有仓库  -->
 		<snapshotRepository>
 			<id>ossrh</id>
 			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
+<!--	<distributionManagement>-->
+<!--		&lt;!&ndash;  申明打包到Maven公有仓库  &ndash;&gt;-->
+<!--		<snapshotRepository>-->
+<!--			<id>ossrh</id>-->
+<!--			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>-->
+<!--		</snapshotRepository>-->
+<!--	</distributionManagement>-->
 
 
 
